@@ -1,0 +1,28 @@
+README
+Zhuoer Wang.5538
+Haifan Ou
+
+File
+Server.java - The chat server
+clientWindow.java - The chat client that has GUI
+components.jar - The OSU_CSE_Library that is used for easier implementation of map, sequence, etc.
+makefile - The make file
+README - The file you are reading
+
+Compile and Run
+Use “make p2Server” to compile and run a server at the very beginning.
+Use “make p2Client” to compile and run a client.
+Use “make client” to run a new client without recompile it.
+Note: the default port is 8888. If you want to change the port number, open Server.java and clientWindow.jar and then search “portNumber” and change it to the port you want to use. Finally, save and recompile and rerun the server and client(s)
+
+Usability Instructions
+1. The user must select a group to join at first.
+2. Then the user is required to select a unique nick name of the selected group.
+3. The largest box (main text area) is the place that displays user and system message.
+	User Message Format:	[{message ID}] {sender's nick name} {post time}
+                              {the message content}
+	System Message Format: [System] {the message content}
+4. The text area under the main text area is the place for entering messages. The user must use the "Send" button next to it in order to send the entered message out.
+5. There's a "Retrieve History" button above the "Send" button. The user can type in the message ID in the box next to the "Retrieve History" button and click the button to retrieve the history message. If the message ID exists in the histroy records, the message will then be displayed in the main text area.
+6. There's user list on the right hand side. It will dynamiclly show the active users in the group.
+7. The user can use the "exit" button to quit the program. Other system default quit methods is also supported.
