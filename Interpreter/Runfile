@@ -1,0 +1,7 @@
+Compile and Run:
+You should import CSE3341_Interpreter.zip into eclipse in order to compile and run this project. Also, make sure the OSU CSE Library is included. The library source is in folder lib and is named components.jar
+In eclipse, you can simply run the Interpreter.java and follow all the instructions in the Console.
+Detailed user manual is included in the Documentation.
+
+* IMPORTANT NOTICE ABOUT TEST FILE
+For your convenience, all the test files the instructor provided have been included in the default path. So if you want to use these files, you can just simply type in the file name (including extension, but without path).

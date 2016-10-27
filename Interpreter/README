@@ -1,0 +1,40 @@
+Zhuoer Wang.5538
+
+Compile and Running Instructions:
+	Please read the Runfile
+
+File submitted:
+	CSE3341_Interpreter.zip
+		The Core Interpreter project. (An eclipse project)
+		In src folder it includes files:	
+			Interpreter.java
+				Where the main method is located. User should run this file.
+			ParseTree.java
+				The parse tree class for the core interpreter project.
+			Parser.java
+				Parser for Core Interpreter project.
+			Printer.java
+				Printer for Core Interpreter project.
+			Executer.java
+				Executer for Core Interpreter project.
+			Tokenizer.java
+				Tokenizer for Core Interpreter project.
+			Tokenizer1.java
+				Implements Tokenizer.
+			TokenKind.java
+				Token kinds needed for the Core Interpreter project.
+		In root folder it includes files:	
+			test31.txt~test35.txt
+				Provided test files.
+			testXXdata(X).txt
+				corresponding input data file.
+		In lib folder it includes files:	
+			component.jar
+				The OSU CSE Library that is used for easier implementation of map, sequence, etc.
+	README
+		The file you are looking.
+	Runfile
+		Instruction about how to compile and run, and details about test files.
+	Documentation
+		Documentation for this project.
+

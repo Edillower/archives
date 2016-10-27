@@ -1,0 +1,43 @@
+Documentation of the Interpreter Project
+Zhuoer Wang.5538
+
+Functionalities
+The Interpreter will parse, print and execute the program provided by the user. The program will parse and print the program immediately when a program file is provided. Then the program will execute the given program according to the user’s instructions (Please see user manual section for detailed info).
+
+
+User Manual
+1.At the beginning, the program will ask user to provide a input program file.
+2.After the input program file is provided, the program will parse the given file and pretty print it in the console.
+3.Then the program will ask user to provide a input data file, which is used for the “read” command. If there’s no need for input data, user can also skip it by simply press “enter” without entering anything in it.
+4.After step 3, the program will execute the given program and print things in the console according to the given program’s instruction(the “write” clause). 
+5.After step 4, the program will back to step 3 in case of the user want to start another execution. User can also type in “executer.exit” to stop or terminate the program by system default method.
+* Input data file format: Each numeric value should be in a separate line.
+* If any error is detected by the interpreter, the interpreter will print out the error message in console and stop execution.
+
+Primary Componets
+	ParseTree.java
+		The parse tree class for the core interpreter project.
+	Parser.java
+		Parser for Core Interpreter project.
+	Printer.java
+		Printer for Core Interpreter project.
+	Executer.java
+		Executer for Core Interpreter project.
+	Tokenizer.java
+		Tokenizer for Core Interpreter project.
+	Tokenizer1.java
+		Implements Tokenizer.
+	TokenKind.java
+		Token kinds needed for the Core Interpreter project.
+ParseTree.java construct the data structure of the parse tree. 
+It has three attributes which are kind(the node type), attributes(for id, it’s the id name; for constant, it’s the int value of it; for all other type of node, it’s empty), and children(the children of the node). It also have a method called addChild which is used for adding child to it. Retrieve a child can use the Sequence method defined in the OSU CSE Library, which is (ParseTree).children.entry((int index))
+Parser.java is used to parse a program. It will take a file scanner as input and construct a parse tree according to the given file. 
+Printer.java is used to pretty print a program. It will take a parse tree as input and pretty print it in the console.
+Executer.java is used to execute a program. It will take a parse tree as input and execute the program as well as print out output in the console as needed.
+Parser, Printer, and Executer are implemented by the recursive descent approach. All non-terminal symbol have their own class in it.
+The Tokenizer part is the same as it was in part2.
+
+
+Testing
+The program passed all the test files provided by the instructor.
+No bug has been fount yet.
